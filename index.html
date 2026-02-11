@@ -1078,19 +1078,25 @@
                     </ul>
                 </div>
                 <div class="portfolio-items border-line-v row">
-                    <!-- Item 01 FINAL FIX -->
+                    <!-- Item 01 FINAL (IMAGE DISABLED, ICON ONLY) -->
                     <div class="col-md-6 col-lg-4 portfolio-item PodcastManagement">
                         <div class="portfolio-box">
 
                             <div class="portfolio-image">
-                                <img src="assets/img/webdesigner/Podcast-Management-1.jpg" alt="Podcast Management">
-                                <!-- Icon click -->
+
+                                <!-- Image: explicitly BLOCK click -->
+                                <img src="assets/img/webdesigner/Podcast-Management-1.jpg" alt="Podcast Management"
+                                    onclick="event.preventDefault(); event.stopImmediatePropagation();">
+
+                                <!-- Icon: ONLY clickable element -->
                                 <div class="portfolio-icon">
-                                    <div role="button" tabindex="0" onclick="event.preventDefault(); event.stopImmediatePropagation(); window.open(
-                       'https://drive.google.com/drive/folders/1ZmEkc9sf7elOLdAVeKjNLanxYNBHvNrg?usp=sharing',
-                       '_blank',
-                       'noopener,noreferrer'
-                     );">
+                                    <div role="button" tabindex="0" onclick="event.preventDefault();
+                      event.stopImmediatePropagation();
+                      window.open(
+                        'https://drive.google.com/drive/folders/1ZmEkc9sf7elOLdAVeKjNLanxYNBHvNrg?usp=sharing',
+                        '_blank',
+                        'noopener,noreferrer'
+                      );">
                                         <i class="bi bi-music-note-beamed"></i>
                                     </div>
                                 </div>
@@ -1103,6 +1109,7 @@
 
                         </div>
                     </div>
+
 
 
                     <!-- Item 02 -->
